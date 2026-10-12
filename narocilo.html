@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Naročilo po meri — Šiviljstvo Lucija, Črnomelj</title>
+  <meta name="description" content="Naroči oblačilo po meri pri Šiviljstvu Lucija: izpolni vrsto oblačila, meritve in želje — sporočilo se pripravi in pošlje po e-pošti.">
+  <link rel="icon" type="image/svg+xml" href="slike/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400..700&family=Archivo:wght@400..700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/slog.css">
+</head>
+<body>
+
+  <div class="trak" aria-hidden="true">
+    <div class="trak-polnilo"><span id="trak-cm">0</span>&nbsp;cm</div>
+  </div>
+
+  <header class="glava">
+    <div class="glava-notranjost">
+      <a class="znamka" href="index.html">
+        <svg class="znamka-igla" width="34" height="34" viewBox="0 0 34 34" aria-hidden="true">
+          <path d="M6 28 C 14 22, 20 16, 26 8" fill="none" stroke="#96382b" stroke-width="1.8" stroke-dasharray="4 3"/>
+          <line x1="26" y1="8" x2="31" y2="3" stroke="#26292c" stroke-width="2.6" stroke-linecap="round"/>
+          <circle cx="27.4" cy="6.6" r="2.1" fill="#26292c"/>
+          <circle cx="27.9" cy="6.1" r="0.9" fill="#e9e6dd"/>
+        </svg>
+        <span class="znamka-besede">
+          <span class="znamka-ime">Šiviljstvo Lucija</span><br>
+          <span class="znamka-podpis">Lucijin bunker</span>
+        </span>
+      </a>
+      <nav class="navigacija" aria-label="Glavna navigacija">
+        <ul>
+          <li><a href="index.html">Domača</a></li>
+          <li><a href="storitve.html">Storitve</a></li>
+          <li><a href="trgovina.html">Trgovina</a></li>
+          <li><a href="o-strani.html">O Luciji</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+          <li><a class="gumb gumb-nav" href="narocilo.html" aria-current="page">Naroči po meri</a></li>
+        </ul>
+      </nav>
+      <button class="prekini-nav" aria-expanded="false" aria-label="Odpri navigacijo">
+        <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true">
+          <path d="M2 4h16M2 10h16M2 16h16" stroke="#26292c" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="junak" style="padding-top:calc(var(--trak-visina) + var(--glava-visina))">
+      <div class="sekcija" style="padding-bottom:0">
+        <p class="obroba">Naročilo po meri</p>
+        <h1 class="junak-naslov" style="font-size:clamp(2.2rem,5vw,3.6rem)">Tvoje meritve, moj šiv.</h1>
+        <p class="sekcija-uvod" style="margin-bottom:1rem">
+          Izpolni, kar veš — ostalo dopolneva skupaj. Ne poznam potrpežljivejšega
+          merilnega traku od pogovora, zato mi piši, če katera meritev ni
+          jasna. Obrazec pripravi sporočilo v tvojem e-poštnem programu.
+        </p>
+        <p class="opomba" style="max-width:720px">
+          <strong>Kako izmeriti:</strong> meri s krojaškim centimetrom nad
+          lažjim perilom, brez raztega. Če številka ni pri roki, pusti polje
+          prazno — izmeriva skupaj. Vsi centimetri se štejejo po telesni
+          meri, ne po konfekcijski velikosti.
+        </p>
+      </div>
+    </section>
+
+    <section class="sekcija">
+      <form id="obrazec-narocilo" class="obrazec" novalidate>
+
+        <div class="obrazec-skupina">
+          <h2 class="obrazec-naslov-skupine">1 · Kontakt</h2>
+          <div class="vrstica">
+            <div class="polje">
+              <label for="ime">Ime in priimek *</label>
+              <input type="text" id="ime" name="ime" required autocomplete="name" placeholder="Tvoje ime">
+            </div>
+            <div class="polje">
+              <label for="eposta">E-pošta *</label>
+              <input type="email" id="eposta" name="eposta" required autocomplete="email" placeholder="ime@primer.si">
+            </div>
+          </div>
+          <div class="vrstica" style="margin-top:1rem">
+            <div class="polje">
+              <label for="telefon">Telefon (neobvezno)</label>
+              <input type="tel" id="telefon" name="telefon" autocomplete="tel" placeholder="0XX XXX XXX">
+            </div>
+          </div>
+        </div>
+
+        <div class="obrazec-skupina">
+          <h2 class="obrazec-naslov-skupine">2 · Vrsta oblačila</h2>
+          <div class="vrstica">
+            <div class="polje">
+              <label for="vrsta">Kaj želiš naročiti *</label>
+              <select id="vrsta" name="vrsta" required>
+                <option value="" selected disabled>— izberi —</option>
+                <option>Oblačilo po meri (obleka, krilo, hlače …)</option>
+                <option>Bluza ali srajca</option>
+                <option>Suknjič ali jakna</option>
+                <option>Poročni ali večerni komad</option>
+                <option>Otroško oblačilo</option>
+                <option>Tekstil za dom (zavese, prevleke …)</option>
+                <option>Preureditev obstoječega kosa</option>
+                <option>Drugo — opišem spodaj</option>
+              </select>
+            </div>
+            <div class="polje">
+              <label for="priloznost">Priložnost (neobvezno)</label>
+              <select id="priloznost" name="priloznost">
+                <option value="" selected>— ni določeno —</option>
+                <option>Vsak dan</option>
+                <option>Slavnostna priložnost</option>
+                <option>Poročna priložnost</option>
+                <option>Poslovne priložnosti</option>
+                <option>Otroška priložnost</option>
+                <option>Za dom</option>
+              </select>
+            </div>
+          </div>
+          <div class="vrstica" style="margin-top:1rem">
+            <div class="polje">
+              <label for="model">Model, inspiracija ali povezava (neobvezno)</label>
+              <input type="text" id="model" name="model" placeholder="npr. slika iz Pinteresta, starejši kos …">
+            </div>
+          </div>
+        </div>
+
+        <div class="obrazec-skupina">
+          <h2 class="obrazec-naslov-skupine">3 · Meritve v centimetrih</h2>
+          <div class="meritve">
+            <div class="polje">
+              <label for="visina">Višina telesa</label>
+              <input type="text" inputmode="numeric" id="visina" name="visina" placeholder="npr. 172">
+            </div>
+            <div class="polje">
+              <label for="prsi">Obseg prsi</label>
+              <input type="text" inputmode="numeric" id="prsi" name="prsi" placeholder="npr. 94">
+            </div>
+            <div class="polje">
+              <label for="podprsmi">Obseg pod prsmi</label>
+              <input type="text" inputmode="numeric" id="podprsmi" name="podprsmi" placeholder="npr. 80">
+            </div>
+            <div class="polje">
+              <label for="pas">Obseg pasu</label>
+              <input type="text" inputmode="numeric" id="pas" name="pas" placeholder="npr. 76">
+            </div>
+            <div class="polje">
+              <label for="boki">Obseg bokov</label>
+              <input type="text" inputmode="numeric" id="boki" name="boki" placeholder="npr. 100">
+            </div>
+            <div class="polje">
+              <label for="ramena">Širina ramen</label>
+              <input type="text" inputmode="numeric" id="ramena" name="ramena" placeholder="npr. 40">
+            </div>
+            <div class="polje">
+              <label for="rokav">Dolžina rokava</label>
+              <input type="text" inputmode="numeric" id="rokav" name="rokav" placeholder="npr. 60">
+            </div>
+            <div class="polje">
+              <label for="dolzina">Dolžina (hlače/krilo)</label>
+              <input type="text" inputmode="numeric" id="dolzina" name="dolzina" placeholder="npr. 98">
+            </div>
+            <div class="polje">
+              <label for="dodatne">Dodatne meritve</label>
+              <input type="text" id="dodatne" name="dodatne" placeholder="opiši po potrebi">
+            </div>
+          </div>
+        </div>
+
+        <div class="obrazec-skupina">
+          <h2 class="obrazec-naslov-skupine">4 · Blago in rok</h2>
+          <div class="vrstica">
+            <div class="polje">
+              <label for="blago">Blago</label>
+              <select id="blago" name="blago">
+                <option value="" selected>— ni določeno —</option>
+                <option>Prinesem svoje blago</option>
+                <option>Izbereva skupaj pri dobavitelju</option>
+                <option>Lucija predlaga blago</option>
+                <option>Preureditev obstoječega kosa</option>
+              </select>
+            </div>
+            <div class="polje">
+              <label for="rok">Želeni rok</label>
+              <input type="date" id="rok" name="rok">
+            </div>
+          </div>
+        </div>
+
+        <div class="obrazec-skupina">
+          <h2 class="obrazec-naslov-skupine">5 · Še kaj, kar moram vedeti</h2>
+          <div class="polje">
+            <label for="sporocilo">Sporočilo</label>
+            <textarea id="sporocilo" name="sporocilo" placeholder="Vse, kar bi mi povedal_a čez mizo: želje, posebnosti, proračun …"></textarea>
+          </div>
+        </div>
+
+        <button type="submit" class="gumb gumb-kreda">Pripravi e-pošto z naročilom</button>
+        <p class="opomba" style="margin-top:1.2rem">
+          <strong>Kaj se zgodi:</strong> klik odpre tvoj e-poštni program s
+          pripravljenim sporočilom na lucijinbunker@gmail.com. Preveri ga,
+          pošlji — in odgovorim ti s predlogom naslednjega koraka.
+        </p>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="noga">
+    <div class="noga-notranjost">
+      <div>
+        <h3>Šiviljstvo Lucija</h3>
+        <p>
+          Belokranjska cesta 14<br>
+          8340 Črnomelj, Slovenija<br>
+          <a href="mailto:lucijinbunker@gmail.com">lucijinbunker@gmail.com</a>
+        </p>
+      </div>
+      <div>
+        <h3>Strani</h3>
+        <ul>
+          <li><a href="storitve.html">Storitve in popravila</a></li>
+          <li><a href="trgovina.html">Trgovina z unikati</a></li>
+          <li><a href="narocilo.html">Naročilo po meri</a></li>
+          <li><a href="o-strani.html">O Luciji</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Sledi mi</h3>
+        <ul>
+          <li><a href="https://www.facebook.com/siviljstvolbunker" rel="noopener" target="_blank">Facebook — @siviljstvolbunker</a></li>
+          <li><a href="https://www.instagram.com/siviljstvolbunker" rel="noopener" target="_blank">Instagram — @siviljstvolbunker</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="noga-legalno">
+      <div class="noga-legalno-notranjost">
+        <span>Šiviljstvo Lucija, Lucija Piškurič s.p.</span>
+        <span>MŠ 7322836000</span>
+        <span>DŠ 58002545</span>
+        <span>© 2026 · Vse fotografije so last Šiviljstva Lucija</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/skripta.js"></script>
+</body>
+</html>

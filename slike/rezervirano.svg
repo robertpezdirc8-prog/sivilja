@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" role="img" aria-label="Rezerviran prostor za Lucijino originalno fotografijo">
+  <rect width="800" height="800" fill="#e9e6dd"/>
+  <rect x="30" y="30" width="740" height="740" fill="#fbfaf7" stroke="#6c7370" stroke-width="1.5" stroke-dasharray="10 8"/>
+  <!-- nit z iglo -->
+  <path d="M300 330 C 360 300, 440 300, 500 330" fill="none" stroke="#96382b" stroke-width="2.5" stroke-dasharray="9 7"/>
+  <line x1="500" y1="330" x2="560" y2="392" stroke="#32383b" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="560" cy="392" r="6" fill="#32383b"/>
+  <circle cx="563" cy="389" r="3.5" fill="#e9e6dd"/>
+  <text x="400" y="470" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="34" fill="#32383b">Fotografija sledi</text>
+  <text x="400" y="516" text-anchor="middle" font-family="'Courier New', monospace" font-size="17" letter-spacing="4" fill="#6c7370">PROSTOR ZA LUCIJIN ORIGINAL</text>
+</svg>

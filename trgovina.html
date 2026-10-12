@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trgovina z unikati — Šiviljstvo Lucija, Črnomelj</title>
+  <meta name="description" content="Unikatni izdelki Šiviljstva Lucija: krila, obleke, torbe in domači tekstil iz enega kosa blaga. Vsak izdelek je en sam primerek — povpraševanje po e-pošti.">
+  <link rel="icon" type="image/svg+xml" href="slike/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400..700&family=Archivo:wght@400..700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/slog.css">
+</head>
+<body>
+
+  <div class="trak" aria-hidden="true">
+    <div class="trak-polnilo"><span id="trak-cm">0</span>&nbsp;cm</div>
+  </div>
+
+  <header class="glava">
+    <div class="glava-notranjost">
+      <a class="znamka" href="index.html">
+        <svg class="znamka-igla" width="34" height="34" viewBox="0 0 34 34" aria-hidden="true">
+          <path d="M6 28 C 14 22, 20 16, 26 8" fill="none" stroke="#96382b" stroke-width="1.8" stroke-dasharray="4 3"/>
+          <line x1="26" y1="8" x2="31" y2="3" stroke="#26292c" stroke-width="2.6" stroke-linecap="round"/>
+          <circle cx="27.4" cy="6.6" r="2.1" fill="#26292c"/>
+          <circle cx="27.9" cy="6.1" r="0.9" fill="#e9e6dd"/>
+        </svg>
+        <span class="znamka-besede">
+          <span class="znamka-ime">Šiviljstvo Lucija</span><br>
+          <span class="znamka-podpis">Lucijin bunker</span>
+        </span>
+      </a>
+      <nav class="navigacija" aria-label="Glavna navigacija">
+        <ul>
+          <li><a href="index.html">Domača</a></li>
+          <li><a href="storitve.html">Storitve</a></li>
+          <li><a href="trgovina.html" aria-current="page">Trgovina</a></li>
+          <li><a href="o-strani.html">O Luciji</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+          <li><a class="gumb gumb-nav" href="narocilo.html">Naroči po meri</a></li>
+        </ul>
+      </nav>
+      <button class="prekini-nav" aria-expanded="false" aria-label="Odpri navigacijo">
+        <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true">
+          <path d="M2 4h16M2 10h16M2 16h16" stroke="#26292c" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="junak" style="padding-top:calc(var(--trak-visina) + var(--glava-visina))">
+      <div class="sekcija" style="padding-bottom:0">
+        <p class="obroba">Trgovina</p>
+        <h1 class="junak-naslov" style="font-size:clamp(2.2rem,5vw,3.6rem)">Unikati.</h1>
+        <p class="sekcija-uvod" style="margin-bottom:1rem">
+          Vsak izdelek tukaj je nastal iz enega kosa blaga in ene ideje —
+          ko je prodan, ga ni več. Zaloga se menjava z veseljem in hitro,
+          zato naročanje poteka prek povpraševanja: sestavi seznam, pošlji
+          e-pošto in povem ti, kaj je trenutno na voljo in po kateri ceni.
+        </p>
+        <p class="opomba" style="max-width:720px">
+          <strong>Kako se naroča:</strong> gumb »Na seznam povpraševanja«
+          pri izdelku doda primerek na tvoj seznam (ostane v tvojem brskalniku).
+          Ko je seznam sestavljen, ga s klikom na <em>Pošlji povpraševanje</em>
+          pošlješ kot e-pošto — odpre se ti tvoj e-poštni program s pripravljenim
+          sporočilom.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== Izdelki ===== -->
+    <section class="sekcija">
+      <div class="mreza-izdelki">
+
+        <article class="listek razkrij">
+          <div class="listek-slika">
+            <span class="listek-koda">UNIKAT 01</span>
+            <img src="slike/izdelek-01.jpg" alt="Unikatno krilo" onerror="this.onerror=null;this.src='slike/rezervirano.svg'">
+          </div>
+          <div class="listek-telo">
+            <h3 class="listek-ime">Unikatno krilo</h3>
+            <p class="listek-opis">
+              Krila po trenutni zalogi blaga — od vsakdanjih poletnih do
+              nežnih večernih. Dolžina in kroj po dogovoru.
+            </p>
+            <div class="listek-noga">
+              <span class="listek-status">POVPRAŠEVANJE</span>
+              <button class="gumb gumb-secundo gumb-majhen" data-dodaj="UNIKAT-01" data-ime="Unikatno krilo">Na seznam povpraševanja</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="listek razkrij">
+          <div class="listek-slika">
+            <span class="listek-koda">UNIKAT 02</span>
+            <img src="slike/izdelek-02.jpg" alt="Unikatna obleka" onerror="this.onerror=null;this.src='slike/rezervirano.svg'">
+          </div>
+          <div class="listek-telo">
+            <h3 class="listek-ime">Unikatna obleka</h3>
+            <p class="listek-opis">
+              Enkratne obleke iz blaga, ki ga drugje ne srečaš. Vsak primerek
+              je šit na eno samo postavo in ni ponovljiv.
+            </p>
+            <div class="listek-noga">
+              <span class="listek-status">POVPRAŠEVANJE</span>
+              <button class="gumb gumb-secundo gumb-majhen" data-dodaj="UNIKAT-02" data-ime="Unikatna obleka">Na seznam povpraševanja</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="listek razkrij">
+          <div class="listek-slika">
+            <span class="listek-koda">UNIKAT 03</span>
+            <img src="slike/izdelek-03.jpg" alt="Torba iz blaga" onerror="this.onerror=null;this.src='slike/rezervirano.svg'">
+          </div>
+          <div class="listek-telo">
+            <h3 class="listek-ime">Torba iz blaga</h3>
+            <p class="listek-opis">
+              Torbe in vrečke iz trpežnih blagov, obložene in sešite ročno.
+              Za trg, knjige ali nedeljski izlet.
+            </p>
+            <div class="listek-noga">
+              <span class="listek-status">POVPRAŠEVANJE</span>
+              <button class="gumb gumb-secundo gumb-majhen" data-dodaj="UNIKAT-03" data-ime="Torba iz blaga">Na seznam povpraševanja</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="listek razkrij">
+          <div class="listek-slika">
+            <span class="listek-koda">UNIKAT 04</span>
+            <img src="slike/izdelek-04.jpg" alt="Otroški izdelki" onerror="this.onerror=null;this.src='slike/rezervirano.svg'">
+          </div>
+          <div class="listek-telo">
+            <h3 class="listek-ime">Otroški izdelki</h3>
+            <p class="listek-opis">
+              Prve majice, klobučki, prevleke in krpice iz mehkih naravnih
+              blagov — praktično, umivljivo, brez heca.
+            </p>
+            <div class="listek-noga">
+              <span class="listek-status">POVPRAŠEVANJE</span>
+              <button class="gumb gumb-secundo gumb-majhen" data-dodaj="UNIKAT-04" data-ime="Otroški izdelki">Na seznam povpraševanja</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="listek razkrij">
+          <div class="listek-slika">
+            <span class="listek-koda">UNIKAT 05</span>
+            <img src="slike/izdelek-05.jpg" alt="Tekstil za dom" onerror="this.onerror=null;this.src='slike/rezervirano.svg'">
+          </div>
+          <div class="listek-telo">
+            <h3 class="listek-ime">Tekstil za dom</h3>
+            <p class="listek-opis">
+              Prevleke za blazine, namizni tekstil in manjše zavese iz
+              kombinacij blagov, ki si jih trenutno v bunkerju.
+            </p>
+            <div class="listek-noga">
+              <span class="listek-status">POVPRAŠEVANJE</span>
+              <button class="gumb gumb-secundo gumb-majhen" data-dodaj="UNIKAT-05" data-ime="Tekstil za dom">Na seznam povpraševanja</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="listek razkrij">
+          <div class="listek-slika">
+            <span class="listek-koda">UNIKAT 06</span>
+            <img src="slike/izdelek-06.jpg" alt="Izdelek po tvoji želji" onerror="this.onerror=null;this.src='slike/rezervirano.svg'">
+          </div>
+          <div class="listek-telo">
+            <h3 class="listek-ime">Po tvoji želji</h3>
+            <p class="listek-opis">
+              Imaš blago ali idejo? Iz nje nastane primerek, ki obstaja samo
+              zate. Začetek je na strani Naročilo po meri.
+            </p>
+            <div class="listek-noga">
+              <span class="listek-status">NAROČILO PO MERI</span>
+              <a class="gumb gumb-secundo gumb-majhen" href="narocilo.html" style="text-align:center">Naroči izdelek</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <hr class="siv">
+
+    <section class="sekcija">
+      <div class="razkrij" style="max-width:760px; margin:0 auto">
+        <h2 class="sekcija-naslov">Kaj je trenutno na voljo?</h2>
+        <p class="sekcija-uvod">
+          Vse fotografije na strani so moji originali — kar vidiš, je šivano
+          tukaj. Novo zalogo objavljam najprej na
+          <a href="https://www.facebook.com/siviljstvolbunker" rel="noopener" target="_blank">Facebooku</a>
+          in <a href="https://www.instagram.com/siviljstvolbunker" rel="noopener" target="_blank">Instagramu</a>.
+        </p>
+        <p class="opomba">
+          <strong>Prevzem:</strong> osebno v Črnomlju (Belokranjska cesta 14)
+          ali po dogovoru po Sloveniji. Dostavo seveda urediva.
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Seznam povpraševanj (trgovinska vrstica) -->
+  <div class="povprasek-trak" role="status">
+    Na seznamu: <span class="stevec-st">0</span> <span class="stevec-beseda">izdelkov</span>
+    <button class="gumb gumb-na-betonu gumb-majhen" type="button">Pošlji povpraševanje</button>
+    <a href="#" class="izprazni">izprazni seznam</a>
+  </div>
+
+  <footer class="noga">
+    <div class="noga-notranjost">
+      <div>
+        <h3>Šiviljstvo Lucija</h3>
+        <p>
+          Belokranjska cesta 14<br>
+          8340 Črnomelj, Slovenija<br>
+          <a href="mailto:lucijinbunker@gmail.com">lucijinbunker@gmail.com</a>
+        </p>
+      </div>
+      <div>
+        <h3>Strani</h3>
+        <ul>
+          <li><a href="storitve.html">Storitve in popravila</a></li>
+          <li><a href="trgovina.html">Trgovina z unikati</a></li>
+          <li><a href="narocilo.html">Naročilo po meri</a></li>
+          <li><a href="o-strani.html">O Luciji</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Sledi mi</h3>
+        <ul>
+          <li><a href="https://www.facebook.com/siviljstvolbunker" rel="noopener" target="_blank">Facebook — @siviljstvolbunker</a></li>
+          <li><a href="https://www.instagram.com/siviljstvolbunker" rel="noopener" target="_blank">Instagram — @siviljstvolbunker</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="noga-legalno">
+      <div class="noga-legalno-notranjost">
+        <span>Šiviljstvo Lucija, Lucija Piškurič s.p.</span>
+        <span>MŠ 7322836000</span>
+        <span>DŠ 58002545</span>
+        <span>© 2026 · Vse fotografije so last Šiviljstva Lucija</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/skripta.js"></script>
+</body>
+</html>
